@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="calculator" aria-label="Calculator">
+        <header class="calculator__header">
+          <h1 class="calculator__title">Calculator</h1>
+          <p class="calculator__subtitle">A simple web calculator</p>
+        </header>
+
+        <div class="calculator__display" aria-live="polite">
+          <div class="calculator__history" id="calc-history"></div>
+          <div class="calculator__current" id="calc-display">0</div>
+        </div>
+
+        <div class="calculator__keys" aria-label="Calculator buttons">
+          <button class="key key--fn" data-action="clear">AC</button>
+          <button class="key key--fn" data-action="sign">±</button>
+          <button class="key key--fn" data-action="percent">%</button>
+          <button class="key key--op" data-action="divide">÷</button>
+
+          <button class="key" data-digit="7">7</button>
+          <button class="key" data-digit="8">8</button>
+          <button class="key" data-digit="9">9</button>
+          <button class="key key--op" data-action="multiply">×</button>
+
+          <button class="key" data-digit="4">4</button>
+          <button class="key" data-digit="5">5</button>
+          <button class="key" data-digit="6">6</button>
+          <button class="key key--op" data-action="subtract">−</button>
+
+          <button class="key" data-digit="1">1</button>
+          <button class="key" data-digit="2">2</button>
+          <button class="key" data-digit="3">3</button>
+          <button class="key key--op" data-action="add">+</button>
+
+          <button class="key key--zero" data-digit="0">0</button>
+          <button class="key" data-digit=".">.</button>
+          <button class="key key--eq" data-action="equals">=</button>
+        </div>
+
+        <footer class="calculator__footer">
+          <p>Keyboard friendly: use number keys, + − × /, Enter, Backspace.</p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
